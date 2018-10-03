@@ -9,7 +9,9 @@ import { Formik } from 'formik';
 class LoginScreen extends Component {
     render() {
         return (
-           <View style={styles.container}>
+           <View
+           accessibilityLabel="Login Form"
+            style={styles.container}>
                 <Formik 
             initialValues={{ firstName: '' }} 
             onSubmit={values => {
