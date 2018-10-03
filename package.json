@@ -2,6 +2,8 @@
   "name": "app",
   "private": true,
   "devDependencies": {
+    "appium": "^1.9.1",
+    "appium-doctor": "^1.6.0",
     "babel-eslint": "^8.2.6",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
@@ -18,6 +20,9 @@
     "react-test-renderer": "^16.4.1"
   },
   "scripts": {
+    "ptest": "source venv/bin/activate && LOCATION='local' py.test && deactivate",
+    "appium": "appium",
+    "appium:doctor": "appium-doctor",
     "flow": "flow",
     "start": "react-native start",
     "android": "react-native run-android",
@@ -30,8 +35,10 @@
     "preset": "react-native"
   },
   "dependencies": {
+    "formik": "^1.3.1",
     "react": "16.3.1",
     "react-native": "~0.55.2",
+    "react-native-formik": "^1.5.5",
     "react-navigation": "^2.17.0",
     "react-redux": "^5.0.7",
     "react-test-renderer": "^16.4.1",
